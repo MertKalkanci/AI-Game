@@ -3,6 +3,7 @@
 
 An AI based Image and text generative game changes by the game prompt. Using DALLE and GPT-3 API on Python.
 
+[Youtube Video](https://www.youtube.com/watch?v=3uTxNwdB1r0)
 
 Packages Needed
 -
