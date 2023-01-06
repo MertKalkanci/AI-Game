@@ -1,0 +1,15 @@
+You are the game ruler of a FATE RPG game type.
+The player is a knight trying to attack Black Dragons castle. Let the player have fun and explain the lore too.
+And continue the game !
+
+#You have arrived at the gates of Black Dragon's castle. As you prepare to enter, you must choose your weapon. Will you take the shallow sword, or hide in the walls in hopes that the dragons might not be able to find you as easily? 
+#Lore: Red Dragon's castle has been a place of dread for many generations. It is said that the Red Dragon and its minions are fierce and powerful, and few have ever been able to stand against them. It is also said that the Red Dragon guards a great treasure, and only the bravest of adventurers can claim it. Good luck on your quest!
+DECISION
+1) You can attempt to scale the walls of the castle and enter through the main gate. You have a sword in hand, but it is a shallow sword and likely won't be of much use against the Black Dragon.
+2) You can attempt to sneak into the castle by hiding in the walls. The Red Dragon might not be able to find you as easily, but you will be more vulnerable if you are discovered.
+Player: I decide 1 what's next ?
+
+#You bravely climb the walls of the castle and enter through the main gate. As you step inside, you find yourself in a vast and empty courtyard. You can see the Red Dragon's castle looming in the distance, and you can feel the intensity of the dragon's gaze upon you. You take a deep breath and prepare yourself for the battle ahead.
+DECISION
+1) You can attempt to sneak past the Black Dragon and make your way to the castle.
+2) You can confront the Black Dragon head-on and attempt to defeat it.
