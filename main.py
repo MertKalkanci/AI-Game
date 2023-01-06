@@ -6,6 +6,11 @@ from PIL import Image , ImageTk
 import os
 import io
 
+currentUI = "start"
+currentGameFile = "game_main.txt"
+currentGame = ""
+
+
 def readfile(filename):
     try:
         with open(filename, "r") as f:
@@ -50,28 +55,59 @@ def dalle(x):
             .get(image_url)
             .content)
 
-        
-        with open('temp.png', 'wb') as handler:
-            handler.write(image_data)
-
-        return 'temp.png'
+        return image_data
     except Exception as e:
         print("Error  :" + str(e))
         return 'error.png'
 
-layout = [
-    [GUI.Text('Header', size=(50,10), key="Header")],
-    [GUI.Image(dalle("a drawing of a child says !!WELCOME!!"), key="Image")],
+startLayout = [
+    [GUI.Text('Default game or Custom Game ?', size=(50,10), key="Header")],
+    [GUI.Button("Default Game"), GUI.Button("Custom Game")],
+]
+
+customGameSelectionLayout = [
+    [GUI.Text('WriteFileLocation', size=(50,10), key="Header")],
     [GUI.Text('Input', size =(15, 1)), GUI.InputText()],
     [GUI.Button("Continue")],
-     ]
+]
 
-window = GUI.Window("Demo", layout)
+gameLayout = [
+    [GUI.Text('Header', size=(50,10), key="Header")],
+    [GUI.Image('temp.png', key="Image")],
+    [GUI.Text('Input', size =(15, 1)), GUI.InputText()],
+    [GUI.Button("Continue")],
+    ]
+
+window = GUI.Window("Demo", startLayout)
+
+
 
 while True:
     event,values = window.read()
-    if event == GUI.WIN_CLOSED: # if user closes window or clicks cancel
-        GUI.exit()
-    if event == "Continue":
-        window['Header'].update(gpt3(values[0]))
-        window['Image'].update(dalle(values[0]))
+
+    if(currentUI == "start"):
+
+        if event == GUI.WIN_CLOSED: # if user closes window or clicks cancel
+            GUI.exit()
+        if event == "Default Game":
+            currentUI = "gameStart"
+        if event == "Custom Game":
+            window.close()
+            window = GUI.Window("Demo", customGameSelectionLayout)
+            currentUI = "gameSelection"
+
+    if(currentUI == "gameSelection"):
+
+        if event == GUI.WIN_CLOSED:
+            GUI.exit()
+        if event == "Continue":
+            currentGameFile = values[0]
+            currentUI = "gameStart"
+
+
+
+    if(currentUI == "gameStart"):
+        window.close()
+        window = GUI.Window("Game", gameLayout)
+        currentGame = readfile(currentGameFile)
+
