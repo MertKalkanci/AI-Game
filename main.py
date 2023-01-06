@@ -1,8 +1,6 @@
 import openai
 import PySimpleGUI as GUI
 import cloudscraper
-import textwrap
-from tkinter import *
 from PIL import Image
 from random import randint
 
