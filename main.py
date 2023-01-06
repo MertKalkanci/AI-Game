@@ -95,7 +95,7 @@ customGameSelectionLayout = [
 ]
 
 gameLayout = [
-    [GUI.Text( text="", size=(200,10), key="GameText")],
+    [GUI.Text( text="", size=(200,18), key="GameText")],
     [GUI.Image('temp.png', key="Image")],
     [GUI.Text('Make Decision', key="DecisionText")],
     #[GUI.Text('Input', size =(15, 1)), GUI.InputText()],
@@ -120,9 +120,10 @@ def promptMaker(playerDecision):
 def dallePromptMaker(gptResponse):
     output = ""
     if (gptResponse.split("\n")[0] == "" or gptResponse.split("\n")[0] == None):
-        output = "{dalleStyle} " + gptResponse.split("\n")[1]
+        output = f"{dalleStyle} " + gptResponse.split("\n")[1]
     else:
-        output = "{dalleStyle} " + gptResponse.split("\n")[0]
+        output = f"{dalleStyle} " + gptResponse.split("\n")[0]
+        
     return output
 
 while True:
