@@ -11,6 +11,8 @@ Packages Needed
 * cloudscraper
 * PIL
 
+Open AI API key needed to run program! for API keys => [OpenAI](https://openai.com/)
+
 Lookup /GameStyles for example Image styles
 Lookup /GameModes for example gamemode prompts
 
