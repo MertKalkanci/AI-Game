@@ -6,7 +6,7 @@ An AI based Image and text generative game changes by the game prompt. Using DAL
 
 Packages Needed
 -
-* Open AI
+* [OpenAI](https://openai.com/)
 * PySimpleGUI
 * cloudscraper
 * PIL
