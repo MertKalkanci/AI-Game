@@ -8,7 +8,7 @@ Packages Needed
 -
 * [OpenAI](https://openai.com/)
 * PySimpleGUI
-* CloudScraper
+* Cloudscraper
 * PIL
 
 Open AI API key needed to run program! for API keys => [OpenAI](https://openai.com/)
