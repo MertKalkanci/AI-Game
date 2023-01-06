@@ -18,10 +18,11 @@ Lookup /GameModes for example gamemode prompts
 
 you can use your and and custom prompts by selecting Custom Game section.
 Have Fun!
-Some creations and scenarios:
+Some creations and scenarios :
 ![1](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/SavedImage2.png)
 ![2](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/SavedImage4.png)
 ![3](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/SavedImages5.png)
+
 ![4](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/7.png)
 ![5](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/2.png)
 ![6](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/3.png)
