@@ -1,6 +1,7 @@
 import openai
 import PySimpleGUI as GUI
 import cloudscraper
+import textwrap
 from tkinter import *
 from PIL import Image
 from random import randint
@@ -16,10 +17,10 @@ global decisionMade
 global decision
 global temperatureValue
 
-dalleStyleFile = "game_main_style.txt"
+dalleStyleFile = "GameStyles/game_main_style.txt"
 dalleStyle = "as an epic oil painting"
 currentUI = "start"
-currentGameFile = "game_main.txt"
+currentGameFile = "GameModes/game_main.txt"
 gamePromptCurrent = ""
 playerPrompt = "\nPLayer:"
 endPrompt = "\n"
@@ -94,7 +95,7 @@ customGameSelectionLayout = [
 ]
 
 gameLayout = [
-    [GUI.Text( text="", size=(200,20), key="GameText")],
+    [GUI.Text( text="", size=(200,10), key="GameText")],
     [GUI.Image('temp.png', key="Image")],
     [GUI.Text('Make Decision', key="DecisionText")],
     #[GUI.Text('Input', size =(15, 1)), GUI.InputText()],
@@ -163,7 +164,7 @@ while True:
         
         window.close()
         window = GUI.Window("Game", gameLayout, finalize = True)
-        window["GameText"].update(gamePromptCurrent)
+        window["GameText"].update(currentGamePrompt)
 
     if(currentUI == "game"):
         if event == "Continue": # sıradaki tur
