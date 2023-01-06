@@ -21,6 +21,15 @@ Lookup /GameModes for example gamemode prompts
 you can use your and and custom prompts by selecting Custom Game section.
 Have Fun!
 
+Current Scenarios :
+-
+* Dragon vs Satan Spell Fight or Peace Negotiation
+* Knight Attacking Back Dragons Castle
+
+Current Visual Styles :
+-
+* Fearful Oil Painting
+* Oil Painting
 
 Some creations and scenarios :
 -
