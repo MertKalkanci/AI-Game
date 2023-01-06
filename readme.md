@@ -11,14 +11,18 @@ Packages Needed
 * Cloudscraper
 * PIL
 
-Open AI API key needed to run program! for API keys => [OpenAI](https://openai.com/)
-
-Lookup /GameStyles for example Image styles
-Lookup /GameModes for example gamemode prompts
+How To Run ?
+-
+#### Open AI API key needed to run program! for API keys => [OpenAI](https://openai.com/)
 
 ![UI](https://github.com/MertKalkanci/AI-Game/blob/main/ScreenShots/UI.png)
 
-you can use your and and custom prompts by selecting Custom Game section.
+you can use your or other custom prompts by selecting Custom Game section.
+
+In the custom game section:
+  * Lookup \GameStyles for example Image styles
+  * Lookup \GameModes for example gamemode prompts
+  
 Have Fun!
 
 Current Scenarios :
