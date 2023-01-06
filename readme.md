@@ -7,10 +7,10 @@ An AI based Image and text generative game changes by the game prompt. Using DAL
 
 Packages Needed
 -
-* [OpenAI](https://openai.com/)
-* PySimpleGUI
-* Cloudscraper
-* PIL
+* [OpenAI](https://github.com/openai/openai-python)
+* [PySimpleGUI](https://github.com/PySimpleGUI)
+* [Cloudscraper](https://github.com/VeNoMouS/cloudscraper)
+* [Pillow (aka PIL)](https://github.com/python-pillow/Pillow)
 
 How To Run ?
 -
