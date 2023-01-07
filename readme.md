@@ -12,7 +12,11 @@ Packages Needed
 * [Cloudscraper](https://github.com/VeNoMouS/cloudscraper)
 * [Pillow (aka PIL)](https://github.com/python-pillow/Pillow)
 
-you can install with requirements.txt
+you can install requirements with
+
+```
+pip install requirements.txt
+```
 
 How To Run ?
 -
