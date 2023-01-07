@@ -12,6 +12,8 @@ Packages Needed
 * [Cloudscraper](https://github.com/VeNoMouS/cloudscraper)
 * [Pillow (aka PIL)](https://github.com/python-pillow/Pillow)
 
+you can install with requirements.txt
+
 How To Run ?
 -
 #### Open AI API key needed to run program! for API keys => [OpenAI](https://openai.com/)
